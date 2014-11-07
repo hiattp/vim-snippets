@@ -717,6 +717,10 @@ snippet scen
 	scenario '${1:scenario}' do
 		${0}
 	end
+snippet scenj
+	scenario '${1:scenario}', js: true do
+		${0}
+	end
 snippet its
 	its(:${1:method}) { should ${0} }
 snippet is
