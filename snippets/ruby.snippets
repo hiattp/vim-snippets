@@ -663,17 +663,17 @@ snippet mthrow
 ##########################
 #     Rspec snippets     #
 ##########################
-snippet desc
+snippet descc
 	describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
 		${0}
 	end
-snippet descm
-	describe '${1:#method}' do
-		${0:pending 'Not implemented'}
+snippet desc
+	describe '${1:method}' do
+		${0}
 	end
 snippet feat
 	feature '${1:feature}' do
-		${0:pending 'Not implemented'}
+		${0}
 	end
 snippet cont
 	context '${1:message}' do
