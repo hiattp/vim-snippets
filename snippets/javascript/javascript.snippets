@@ -15,6 +15,10 @@ snippet f
 	function(${1}) {
 		${0}
 	}
+snippet f,
+	function(${1}) {
+		${0}
+	},
 # Function assigned to variable
 snippet vf
 	var ${1:function_name} = function $1(${2}) {
@@ -234,6 +238,9 @@ snippet qsa
 # console.log
 snippet cl
 	console.log(${0});
+# console.error
+snippet ce
+	console.error(${0});
 # console.debug
 snippet cd
 	console.debug(${0});
@@ -260,9 +267,7 @@ snippet it
 	it('${1}', function(){
 		${0}
 	});
-
-# Misc
-
-# setTimeout function
 snippet timeout
-	setTimeout(function () {${0}}${2}, ${1:10});
+	setTimeout(function () {
+		${1}
+	}, ${0});
