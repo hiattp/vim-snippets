@@ -1,7 +1,3 @@
-# encoding for Ruby 1.9
-snippet enc
-	# encoding: utf-8
-
 # #!/usr/bin/env ruby
 snippet #!
 	#!/usr/bin/env ruby
@@ -12,30 +8,13 @@ snippet =b
 	=begin rdoc
 		${0}
 	=end
-snippet prot
-	protected
-
-	${0}
-snippet priv
-	private
-
-	${0}
-snippet y
-	:yields: ${0:arguments}
-snippet rb
-	#!/usr/bin/env ruby -wKU
 snippet beg
 	begin
 		${0}
 	rescue ${1:Exception} => ${2:e}
 	end
-
 snippet reqr
 	require_relative '${1}'
-snippet #
-	# =>
-snippet end
-	__END__
 snippet case
 	case ${1:object}
 	when ${2:condition}
@@ -44,14 +23,6 @@ snippet case
 snippet when
 	when ${1:condition}
 		${0}
-snippet def
-	def ${1:method_name}
-		${0}
-	end
-snippet deft
-	def test_${1:case_name}
-		${0}
-	end
 snippet descendants
 	class Class
 		def descendants
