@@ -111,12 +111,16 @@ snippet <
 snippet Link
 	<Link to="${1}">${0}</Link>
 snippet R.
-	var ${1} = React.createClass({
+	const ${1} = React.createClass({
+		${0}
+	});
+snippet Rx
+	React.createClass({
 		${0}
 	});
 snippet ren
-	render: function() {
-		return (
+	render() {
+		return <div>
 			${0}
-		)
+		</div>;
 	}
