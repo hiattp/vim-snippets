@@ -360,39 +360,14 @@ snippet scad
 	scan(${1:/pattern/}) do |${2:match}|
 		${0}
 	end
-snippet max
-	max { |a, b| ${0} }
-snippet min
-	min { |a, b| ${0} }
-snippet par
-	partition { |${1:e}| ${0} }
-snippet pard
-	partition do |${1:e}|
-		${0}
-	end
 snippet rej
 	reject { |${1:e}| ${0} }
-snippet rejd
-	reject do |${1:e}|
-		${0}
-	end
 snippet sel
 	select { |${1:e}| ${0} }
-snippet seld
-	select do |${1:e}|
-		${0}
-	end
-snippet lam
-	lambda { |${1:args}| ${0} }
 snippet ->
 	-> { ${0} }
 snippet ->a
 	->(${1:args}) { ${0} }
-# I'm pretty sure that ruby users expect do to expand to do .. end
-snippet do
-	do
-		${0}
-	end
 # this is for one or more variables. typing a ", " is that cheap that it may
 # not be worth adding another snippet. should 0/1 placeholders change order?
 # its a good idea to think about the var name, so use it first
@@ -670,6 +645,8 @@ snippet spec
 	specify { subject.${0} }
 snippet exp
 	expect(${1:object}).to ${0}
+snippet expp
+	expect(page).to have_content ${0}
 snippet exn
 	expect(${1:object}).not_to ${0}
 snippet expb
